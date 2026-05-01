@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { CheckCircle, Shield, Zap, TrendingUp, Users, MessageSquare } from "lucide-react";
+import { Shield, Zap, TrendingUp, Users} from "lucide-react";
 import "./Home.css";
 
 function Home() {
