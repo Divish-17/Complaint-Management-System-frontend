@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { CheckCircle2, Clock, Mail, User, Info, AlertCircle, RefreshCcw, Send } from "lucide-react";
+import { CheckCircle2, Clock, Mail, User, RefreshCcw} from "lucide-react";
 import "./StaffDashboard.css";
 
 const StaffDashboard = () => {
