@@ -114,19 +114,6 @@ function UserDashboard() {
     }
   };
 
-  const getPriorityClass = (priority) => {
-    switch (priority) {
-      case "Urgent":
-        return "priority-urgent";
-      case "High":
-        return "priority-high";
-      case "Medium":
-        return "priority-medium";
-      default:
-        return "priority-low";
-    }
-  };
-
   if (loading) {
     return (
       <div className="dashboard-loading">
