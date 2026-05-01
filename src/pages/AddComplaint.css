@@ -1,0 +1,132 @@
+.add-complaint-wrapper {
+  padding: 60px 0;
+  min-height: calc(100vh - 70px);
+}
+
+.btn-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.btn-back:hover {
+  color: var(--primary-color);
+}
+
+.form-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.form-info-side {
+  padding: 40px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+}
+
+.icon-badge {
+  width: 64px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.form-info-side h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.form-info-side p {
+  opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.guidelines {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.guidelines li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.form-input-side {
+  padding: 40px;
+}
+
+.complaint-form .form-group {
+  margin-bottom: 24px;
+}
+
+.complaint-form label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.complaint-form input,
+.complaint-form textarea,
+.complaint-form select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  transition: all 0.2s;
+  background: var(--surface-color);
+  color: var(--text-primary);
+}
+
+.complaint-form textarea {
+  resize: vertical;
+}
+
+.complaint-form input:focus,
+.complaint-form textarea:focus,
+.complaint-form select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+}
+
+.form-footer {
+  margin-top: 40px;
+}
+
+@media (max-width: 860px) {
+  .form-card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .form-info-side {
+    padding: 30px;
+  }
+}
